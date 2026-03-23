@@ -1,0 +1,56 @@
+{
+  "projectType": "data-platform",
+  "projectName": "Deltarune Complete Transcript Dataset",
+  "projectDescription": "A fan-made structured transcript dataset covering Deltarune Chapters 1–4 in JSONL and Parquet formats, intended to provide LLMs with narrative context for Toby Fox's RPG game.",
+  "theme": "willow",
+  "primaryColor": "#7c7c7c",
+  "lightColor": "#080808",
+  "darkColor": "#c9c9c9",
+  "navigation": {
+    "tabs": [
+      {
+        "tab": "Documentation",
+        "groups": [
+          {
+            "group": "Overview",
+            "pages": ["introduction", "why-this-exists"]
+          },
+          {
+            "group": "Dataset",
+            "pages": ["dataset/format", "dataset/chapters", "dataset/speaker-types"]
+          },
+          {
+            "group": "Usage",
+            "pages": ["usage/quickstart", "usage/loading-jsonl", "usage/loading-parquet", "usage/chatml"]
+          },
+          {
+            "group": "Reference",
+            "pages": ["reference/schema", "reference/known-gaps", "reference/license"]
+          }
+        ]
+      }
+    ]
+  },
+  "keyFeatures": [
+    "Full transcripts for Deltarune Chapters 1–4 in structured JSONL format",
+    "Parquet files for efficient bulk data loading",
+    "ChatML-formatted version for LLM fine-tuning",
+    "Three-field schema: context, speaker, and text",
+    "CC0 1.0 public domain license — no restrictions",
+    "Python utility script to convert JSONL to Parquet",
+    "Covers Normal Route for all chapters plus Sword Route in Chapter 3"
+  ],
+  "publicApiSurface": [
+    "data/chap1_dataset.jsonl",
+    "data/chap2_dataset.jsonl",
+    "data/chap3_dataset.jsonl",
+    "data/chap4_dataset.jsonl",
+    "parquet/chap1_dataset.parquet",
+    "parquet/chap2_dataset.parquet",
+    "parquet/chap3_dataset.parquet",
+    "parquet/chap4_dataset.parquet",
+    "parquet/full_chapters_dataset.parquet",
+    "data/chatml/deltarune_story_chatml.jsonl",
+    "parquet.py::make_parquets()"
+  ]
+}
